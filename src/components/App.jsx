@@ -1,16 +1,29 @@
+import { CardBlanc } from "./App.styled";
+import {Container}  from "./commonStyles/Common.styled"
+
 export const App = () => {
+
+
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <main>
+      <Container>
+        <CardBlanc>
+          <div>
+            <div>
+            line avatar
+            </div>
+            <div>
+              tweets
+              follo
+            </div>
+            <button>
+
+            </button>
+          </div>
+        </CardBlanc>  
+      </Container>
+    </main>
   );
 };
+
+

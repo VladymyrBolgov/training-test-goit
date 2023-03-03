@@ -7,7 +7,9 @@ import {
   DescriptionText,
   Line,
   RoundImg,
+  Avatar ,
 } from "./App.styled";
+// import {avatar} from "../images/avatar_user.png"
 
 
 export const App = () => {
@@ -39,7 +41,7 @@ export const App = () => {
           <Content>
             <Line>
               <RoundImg>
-                
+                {/* <Avatar src={avatar} alt={name} /> */}
               </RoundImg>
             </Line>
             <div>

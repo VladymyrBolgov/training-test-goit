@@ -48,7 +48,26 @@ box-shadow: 0px 3.43693px 3.43693px
 `;
 
 export const RoundImg = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: #5736a3;
+  border-radius: 50%;
+  background-image: url("${round}");
+  background-size: 112%;
+  background-repeat: no-repeat;
+  background-position: top;
+`;
 
+export const Avatar = styled.img`
+    height: 64px;
+    border-radius: 50%;
 `;
 
 export const DescriptionText = styled.p`

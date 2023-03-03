@@ -10,7 +10,6 @@ import {
 } from "./App.styled";
 import avatar from '../images/avatar_user.png'
 
-
 export const App = () => {
   const [followersCount, setFollowersCount] = useState(100500);
   const [followingStatus, setFollowingStatus] = useState('follow');
@@ -38,12 +37,14 @@ export const App = () => {
       <Container>
        {/* logo */}
         <CardBlanc>
+     
             {/* avatar */}
             <Line>
               <RoundImg>
                 <Avatar src={avatar} alt={'avatar_user'} />
               </RoundImg>
             </Line>
+          
         {/* text */}
             <div>
               <DescriptionText> 777 TWEETS</DescriptionText>

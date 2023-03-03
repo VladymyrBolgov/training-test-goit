@@ -7,9 +7,9 @@ import {
   DescriptionText,
   Line,
   RoundImg,
-  Avatar ,
+  Avatar,
 } from "./App.styled";
-// import {avatar} from "../images/avatar_user.png"
+import avatar from '../images/avatar_user.png'
 
 
 export const App = () => {
@@ -39,15 +39,18 @@ export const App = () => {
       <Container>
         <CardBlanc>
           <Content>
+            
             <Line>
               <RoundImg>
-                {/* <Avatar src={avatar} alt={name} /> */}
+                <Avatar src={avatar} alt={'avatar_user'} />
               </RoundImg>
             </Line>
+
             <div>
               <DescriptionText> 777 TWEETS</DescriptionText>
               <DescriptionText> {formatCount(followersCount)} FOLLOWERS</DescriptionText>
             </div>
+
             <ButtonFollow
               type="button"
               style={isFollowing ? { backgroundColor: "#5CD3A8" } : {}}
@@ -55,6 +58,7 @@ export const App = () => {
             >
               {followingStatus}
             </ButtonFollow>
+
           </Content>
         </CardBlanc>  
       </Container>

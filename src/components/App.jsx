@@ -1,6 +1,13 @@
 import { useState } from "react";
 import {Container}  from "./commonStyles/Common.styled"
-import { CardBlanc, ButtonFollow, Content, DescriptionText  } from "./App.styled";
+import {
+  CardBlanc,
+  ButtonFollow,
+  Content,
+  DescriptionText,
+  Line,
+  RoundImg,
+} from "./App.styled";
 
 
 export const App = () => {
@@ -30,9 +37,11 @@ export const App = () => {
       <Container>
         <CardBlanc>
           <Content>
-            <div>
-            line avatar
-            </div>
+            <Line>
+              <RoundImg>
+                
+              </RoundImg>
+            </Line>
             <div>
               <DescriptionText> 777 TWEETS</DescriptionText>
               <DescriptionText> {formatCount(followersCount)} FOLLOWERS</DescriptionText>

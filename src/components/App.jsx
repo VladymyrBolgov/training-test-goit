@@ -1,14 +1,9 @@
-import { useState } from "react";
-import {Container}  from "./commonStyles/Common.styled"
-import {
-  CardBlanc,
-  ButtonFollow,
-  DescriptionText,
-  Line,
-  RoundImg,
-  Avatar,
-} from "./App.styled";
-import avatar from '../images/avatar_user.png'
+import React, { useState } from "react";
+import {Container } from "./commonStyles/Common.styled"
+import {CardBlanc} from "./App.styled";
+import { TextInfo } from "./TextInfo/TextInfo";
+import { LineAvatar } from "./LineAvatar/LineAvatar";
+import { Button }from "./Button/Button";
 
 export const App = () => {
   const [followersCount, setFollowersCount] = useState(100500);
@@ -27,42 +22,22 @@ export const App = () => {
     }
   };
 
-  const formatCount = number => {
-    const numberFormat = new Intl.NumberFormat('en-US');
-    return numberFormat.format(number);
-  };
-
   return (
     <main>
       <Container>
-       {/* logo */}
-        <CardBlanc>
-     
-            {/* avatar */}
-            <Line>
-              <RoundImg>
-                <Avatar src={avatar} alt={'avatar_user'} />
-              </RoundImg>
-            </Line>
-          
-        {/* text */}
-            <div>
-              <DescriptionText> 777 TWEETS</DescriptionText>
-              <DescriptionText> {formatCount(followersCount)} FOLLOWERS</DescriptionText>
-            </div>
-        {/* button */}
-            <ButtonFollow
-              type="button"
-              style={isFollowing ? { backgroundColor: "#5CD3A8" } : {}}
-              onClick={toggleFollowingStatus}
-            >
-              {followingStatus}
-            </ButtonFollow>
-
+        <CardBlanc> 
+          <LineAvatar/>
+          <TextInfo followersCount={followersCount } />
+          <Button
+            isFollowing={isFollowing}
+            followingStatus={followingStatus}
+            onClick={toggleFollowingStatus}
+          />
         </CardBlanc>  
       </Container>
     </main>
   );
 };
+
 
 

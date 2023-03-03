@@ -21,19 +21,6 @@ export const CardBlanc = styled.div`
     background-position: top 20px left 20px, top 28px left 36px, center;
 `;
 
-export const Content = styled.div`
-  padding-bottom: 36px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 26px;
-  height: 238px;
-  > div p:not(:last-child) {
-    margin-bottom: 16px;
-  }
-`;
-
 export const Line = styled.div`
 position: absolute;
 width: 380px;
@@ -77,6 +64,7 @@ export const DescriptionText = styled.p`
     line-height: 1.2;
     color: #EBD8FF;
     text-align: center;
+    margin-bottom: 16px;
 `;
 
 export const ButtonFollow = styled.button`
@@ -92,5 +80,7 @@ export const ButtonFollow = styled.button`
     line-height: 1.37;
     line-height: 1.22;
     font-weight: 600;
-    font-family: 'Montserrat';  
+    font-family: 'Montserrat'; 
+    margin-top: 10px;
+    margin-bottom: 36px;
 `;

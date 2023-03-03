@@ -2,7 +2,7 @@
   "name": "training-test-goit",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bolgov.github.io/test-task-goit/",
+  "homepage": "https://bolgov.github.io/training-test-goit/",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",

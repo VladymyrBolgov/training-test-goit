@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/training-test-goit/static/css/main.7ad4f057.css",
+    "main.js": "/training-test-goit/static/js/main.a94aca3f.js",
+    "static/media/decor_picture.png": "/training-test-goit/static/media/decor_picture.86562350dcaa714a1442.png",
+    "index.html": "/training-test-goit/index.html",
+    "main.7ad4f057.css.map": "/training-test-goit/static/css/main.7ad4f057.css.map",
+    "main.a94aca3f.js.map": "/training-test-goit/static/js/main.a94aca3f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ad4f057.css",
+    "static/js/main.a94aca3f.js"
+  ]
+}

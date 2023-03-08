@@ -18,6 +18,7 @@ export const App = () => {
     storedSettings ? storedSettings.isFollowing : false
   );
 
+  
   useEffect(() => {
     const settings = {
       followersCount,

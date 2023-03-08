@@ -16,4 +16,8 @@ font-weight: 600;
 font-family: 'Montserrat'; 
 margin-top: 10px;
 margin-bottom: 36px;
+&:hover {
+    background-color: #fba8f2;
+    transform: scale(1.1);
+  }
 `;

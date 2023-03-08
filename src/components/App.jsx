@@ -7,17 +7,17 @@ import { Button }from "./Button/Button";
 
 export const App = () => {
   const [followersCount, setFollowersCount] = useState(100500);
-  const [followingStatus, setFollowingStatus] = useState('follow');
+  const [followingStatus, setFollowingStatus] = useState('FOLLOW');
   const [isFollowing, setIsFollow] = useState(false);
 
   const toggleFollowingStatus = () => {
     if (isFollowing === false) {
       setIsFollow(true);
-      setFollowingStatus('following');
+      setFollowingStatus('FOLLOWING');
       setFollowersCount(prev => prev + 1);
     } else if (isFollowing === true) {
       setIsFollow(false);
-      setFollowingStatus('follow');
+      setFollowingStatus('FOLLOW');
       setFollowersCount(prev => prev - 1);
     }
   };

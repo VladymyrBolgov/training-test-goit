@@ -7,7 +7,6 @@ import { Button }from "./Button/Button";
 
 export const App = () => {
   const storedSettings = JSON.parse(localStorage.getItem('settings'));
-
   const [followersCount, setFollowersCount] = useState(() =>
     storedSettings ? storedSettings.followersCount : 100500
   );
@@ -18,14 +17,12 @@ export const App = () => {
     storedSettings ? storedSettings.isFollowing : false
   );
 
-  
   useEffect(() => {
     const settings = {
       followersCount,
       followingStatus,
       isFollowing,
     };
-
     localStorage.setItem('settings', JSON.stringify(settings));
   }, [isFollowing, followersCount, followingStatus]);
 
